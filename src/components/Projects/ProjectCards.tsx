@@ -1,7 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { BsGithub } from 'react-icons/bs';
-import { CgWebsite } from 'react-icons/cg';
 
 const ProjectCards = (props: any) => {
 	return (
@@ -12,25 +11,23 @@ const ProjectCards = (props: any) => {
 				<Card.Text style={{ textAlign: 'justify' }}>
 					{props.description}
 				</Card.Text>
-				<Button variant="primary" href={props.ghLink} target="_blank">
-					<BsGithub /> &nbsp;
-					{props.isBlog ? 'Blog' : 'GitHub'}
-				</Button>
-				{'\n'}
-				{'\n'}
-
-				{/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-				{!props.isBlog && props.demoLink && (
-					<Button
-						variant="primary"
-						href={props.demoLink}
-						target="_blank"
-						style={{ marginLeft: '10px' }}
-					>
-						<CgWebsite /> &nbsp;
-						{'Demo'}
+				{props.ghLinkBack && (
+					<Button variant="primary" href={props.ghLinkBack} target="_blank">
+						<BsGithub /> Backend
 					</Button>
+				)}
+				{props.ghLinkFront && (
+					<>
+						&nbsp; &nbsp;
+						<Button
+							className="pl-2"
+							variant="primary"
+							href={props.ghLinkFront}
+							target="_blank"
+						>
+							<BsGithub /> &nbsp; Frontend
+						</Button>
+					</>
 				)}
 			</Card.Body>
 		</Card>

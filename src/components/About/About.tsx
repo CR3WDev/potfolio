@@ -2,9 +2,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import laptopImg from '../../Assets/about.png';
 import Particle from '../Particle';
 import AboutCard from './AboutCard';
-import Github from './Github';
 import Techstack from './Techstack';
-import Toolstack from './Toolstack';
 
 function About() {
 	return (
@@ -21,7 +19,7 @@ function About() {
 						}}
 					>
 						<h1 style={{ fontSize: '2.1em', paddingBottom: '20px' }}>
-							Know Who <strong className="purple">I'M</strong>
+							Quem sou <strong className="purple">Eu?</strong>
 						</h1>
 						<AboutCard />
 					</Col>
@@ -34,17 +32,10 @@ function About() {
 					</Col>
 				</Row>
 				<h1 className="project-heading">
-					Professional <strong className="purple">Skillset </strong>
+					Principais <strong className="purple">Competências </strong>
 				</h1>
 
 				<Techstack />
-
-				<h1 className="project-heading">
-					<strong className="purple">Tools</strong> I use
-				</h1>
-				<Toolstack />
-
-				<Github />
 			</Container>
 		</Container>
 	);

@@ -1,15 +1,12 @@
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {
-	AiFillStar,
 	AiOutlineFundProjectionScreen,
 	AiOutlineHome,
 	AiOutlineUser,
 } from 'react-icons/ai';
-import { CgGitFork } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 
 import { CgFileDocument } from 'react-icons/cg';
@@ -63,7 +60,7 @@ const NavBar = () => {
 								to="/about"
 								onClick={() => updateExpanded(false)}
 							>
-								<AiOutlineUser style={{ marginBottom: '2px' }} /> About
+								<AiOutlineUser style={{ marginBottom: '2px' }} /> Sobre
 							</Nav.Link>
 						</Nav.Item>
 
@@ -76,7 +73,7 @@ const NavBar = () => {
 								<AiOutlineFundProjectionScreen
 									style={{ marginBottom: '2px' }}
 								/>{' '}
-								Projects
+								Projetos
 							</Nav.Link>
 						</Nav.Item>
 
@@ -86,19 +83,8 @@ const NavBar = () => {
 								to="/resume"
 								onClick={() => updateExpanded(false)}
 							>
-								<CgFileDocument style={{ marginBottom: '2px' }} /> Resume
+								<CgFileDocument style={{ marginBottom: '2px' }} /> Currículo
 							</Nav.Link>
-						</Nav.Item>
-
-						<Nav.Item className="fork-btn">
-							<Button
-								href="https://github.com/soumyajit4419/Portfolio"
-								target="_blank"
-								className="fork-btn-inner"
-							>
-								<CgGitFork style={{ fontSize: '1.2em' }} />{' '}
-								<AiFillStar style={{ fontSize: '1.1em' }} />
-							</Button>
 						</Nav.Item>
 					</Nav>
 				</Navbar.Collapse>
