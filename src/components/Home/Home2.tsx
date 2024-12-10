@@ -34,7 +34,7 @@ const Home2 = () => {
 							<br />
 							Sempre que possível tento aplicar meus conhecimentos em{' '}
 							<b className="purple">React.js</b> e{' '}
-							<b className="purple">Spring boot</b> em projetos reais
+							<b className="purple">Node</b> em projetos reais
 						</p>
 					</Col>
 					<Col md={4} className="myAvtar">

@@ -1,6 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import advogapp from '../../Assets/Projects/advogapp.png';
 import api from '../../Assets/Projects/api.png';
+import amFinance from '../../Assets/Projects/amfinance.png';
 import omnichannel from '../../Assets/Projects/omnichannel.png';
 import Particle from '../Particle';
 import ProjectCard from './ProjectCards';
@@ -17,6 +18,15 @@ function Projects() {
 					Aqui estão alguns projetos pessoais que eu fiz recentemente.
 				</p>
 				<Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+					<Col md={4} className="project-card">
+						<ProjectCard
+							imgPath={amFinance}
+							isBlog={true}
+							title="AM Finance"
+							description="Sistema de controle financeiro pessoal completo feito em Spring inicialmente e migrado pra next.js com server actions"
+							prodLink="https://www.amfinance.com.br/"
+						/>
+					</Col>
 					<Col md={4} className="project-card">
 						<ProjectCard
 							imgPath={advogapp}

@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 import { CgFileDocument } from 'react-icons/cg';
 
 const NavBar = () => {
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const [expand, updateExpanded] = useState<any>(false);
 	const [navColour, updateNavbar] = useState(false);
 
