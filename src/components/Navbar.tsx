@@ -61,7 +61,7 @@ const NavBar = () => {
 								to="/about"
 								onClick={() => updateExpanded(false)}
 							>
-								<AiOutlineUser style={{ marginBottom: '2px' }} /> Sobre
+								<AiOutlineUser style={{ marginBottom: '2px' }} /> About
 							</Nav.Link>
 						</Nav.Item>
 
@@ -74,7 +74,7 @@ const NavBar = () => {
 								<AiOutlineFundProjectionScreen
 									style={{ marginBottom: '2px' }}
 								/>{' '}
-								Projetos
+								Projects
 							</Nav.Link>
 						</Nav.Item>
 
@@ -84,7 +84,7 @@ const NavBar = () => {
 								to="/resume"
 								onClick={() => updateExpanded(false)}
 							>
-								<CgFileDocument style={{ marginBottom: '2px' }} /> Currículo
+								<CgFileDocument style={{ marginBottom: '2px' }} /> Resume
 							</Nav.Link>
 						</Nav.Item>
 					</Nav>

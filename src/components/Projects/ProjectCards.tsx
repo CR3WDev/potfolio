@@ -40,7 +40,7 @@ const ProjectCards = (props: any) => {
 							href={props.prodLink}
 							target="_blank"
 						>
-							<MdDashboard /> &nbsp; Teste agora!
+							<MdDashboard /> &nbsp; Try it now!
 						</Button>
 					</>
 				)}

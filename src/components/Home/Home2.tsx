@@ -9,34 +9,34 @@ const Home2 = () => {
 		<Container fluid className="home-about-section" id="about">
 			<Container>
 				<Row>
-					<Col md={8} className="home-about-description">
-						<h1 style={{ fontSize: '2.6em' }}>
-							Deixe-me <span className="purple"> APRESENTAR </span>
-						</h1>
-						<p className="home-about-body">
-							Sou um programador apaixonado por programar que busca sempre se
-							aperfeiçoar como programador
-							<br />
-							<br />
-							Tenho expertise em linguágens clássicas como:
-							<i>
-								<b className="purple"> Java, Typescript e javascript</b>
-							</i>
-							<br />
-							<br />
-							Meus Interesses são produzir projetos que possam deixar meu legado
-							na terra, &nbsp;
-							<i>
-								principalmente usando{' '}
-								<b className="purple">novas técnologias do mercado</b>
-							</i>
-							<br />
-							<br />
-							Sempre que possível tento aplicar meus conhecimentos em{' '}
-							<b className="purple">React.js</b> e{' '}
-							<b className="purple">Node</b> em projetos reais
-						</p>
-					</Col>
+				<Col md={8} className="home-about-description">
+					<h1 style={{ fontSize: '2.6em' }}>
+					Let me <span className="purple"> INTRODUCE </span> myself
+					</h1>
+					<p className="home-about-body">
+					I am a programmer passionate about programming who always seeks to
+					improve as a programmer
+					<br />
+					<br />
+					I have expertise in classic languages such as:
+					<i>
+						<b className="purple"> Java, Typescript and JavaScript</b>
+					</i>
+					<br />
+					<br />
+					My interests are to produce projects that can leave my legacy
+					on earth, &nbsp;
+					<i>
+						especially using{' '}
+						<b className="purple">new market technologies</b>
+					</i>
+					<br />
+					<br />
+					Whenever possible I try to apply my knowledge in{' '}
+					<b className="purple">React.js</b> and{' '}
+					<b className="purple">Node</b> in real projects
+					</p>
+				</Col>
 					<Col md={4} className="myAvtar">
 						<Tilt>
 							<img src={myImg} className="img-fluid" alt="avatar" />
@@ -45,7 +45,7 @@ const Home2 = () => {
 				</Row>
 				<Row>
 					<Col md={12} className="home-about-social">
-						<h1>Me encontre no</h1>
+						<h1>Find me on</h1>
 						<ul className="home-about-social-links">
 							<li className="social-icons">
 								<a
